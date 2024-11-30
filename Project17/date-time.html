@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time Project Report</title>
+    <link rel="stylesheet" href="date-time.css">
+</head>
+<body>
+    <header>
+        <h1>Date and Time Project Report</h1>
+        <p>A detailed exploration of how date and time are managed and utilized in various systems.</p>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>This report explores the concept of date and time in computing, highlighting how different systems handle the tracking and management of time, from simple clocks to complex time zones and calendar systems.</p>
+        </section>
+
+        <section id="objective">
+            <h2>Objective</h2>
+            <p>The primary objective of this project is to understand how date and time are implemented in systems, with a focus on accuracy, precision, and time zone handling in various applications like scheduling systems, event planners, and time-based programming tasks.</p>
+        </section>
+
+        <section id="methodology">
+            <h2>Methodology</h2>
+            <p>The study was conducted through research and practical experimentation with date and time functions in multiple programming languages, such as JavaScript, Python, and C++. Key areas of focus include:</p>
+            <ul>
+                <li>Understanding system clocks and their accuracy.</li>
+                <li>Exploring the usage of timestamps and time zones in databases.</li>
+                <li>Implementing date/time calculations for scheduling tasks and events.</li>
+                <li>Analyzing time formatting and localization in global systems.</li>
+            </ul>
+        </section>
+
+        <section id="findings">
+            <h2>Findings</h2>
+            <p>Key findings from the project include:</p>
+            <ul>
+                <li><strong>System Clocks:</strong> Most systems rely on the hardware clock, but software-based time synchronization (e.g., NTP) is crucial for maintaining accuracy over long periods.</li>
+                <li><strong>Time Zones:</strong> Handling time zones is critical for applications that serve users in multiple geographical locations. Issues like Daylight Saving Time (DST) need to be managed carefully.</li>
+                <li><strong>UTC vs Local Time:</strong> Coordinating Universal Time (UTC) is commonly used in backend systems, while local time is more suitable for user-facing applications.</li>
+                <li><strong>Date Calculations:</strong> Date calculations (e.g., adding days or months) require careful handling to account for leap years, month lengths, and varying time intervals.</li>
+            </ul>
+        </section>
+
+        <section id="conclusions">
+            <h2>Conclusions</h2>
+            <p>The accurate handling of date and time is fundamental to the functioning of modern software systems. Proper consideration of time zones, system clocks, and localization improves user experience and system reliability. Inconsistent date/time handling can lead to issues such as scheduling errors, data inconsistencies, and performance problems. Best practices include:</p>
+            <ul>
+                <li>Using UTC for backend operations.</li>
+                <li>Handling time zones properly for user-facing interfaces.</li>
+                <li>Considering edge cases like leap years and daylight saving time in date/time calculations.</li>
+            </ul>
+        </section>
+
+        <section id="current-time">
+            <h2>Current Date and Time</h2>
+            <div id="current-time-container">
+                <p id="current-date">Loading current date...</p>
+                <p id="current-time">Loading current time...</p>
+            </div>
+        </section>
+    </main>
+    <button class="back-button" onclick="goBack()">← Back</button>
+    <footer>
+        <p>Created by Pihu | Date and Time Management in Systems</p>
+    </footer>
+    <script src="date-time.js"></script>
+</body>
+</html>

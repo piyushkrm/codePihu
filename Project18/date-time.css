@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background: #d9534f;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* Main Content */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #d9534f;
+  border-bottom: 2px solid #d9534f;
+  padding-bottom: 0.5rem;
+}
+
+/* Project Overview Section */
+#project-overview {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+/* Key Features List */
+#key-features ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+#key-features li {
+  margin-bottom: 1rem;
+}
+
+/* Technology Stack */
+#technology-stack ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+#technology-stack li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Methodology Section */
+#methodology ul {
+  margin-left: 20px;
+}
+
+#methodology li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Learning Outcomes Section */
+#learning-outcomes ul {
+  margin-left: 20px;
+}
+
+#learning-outcomes li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Use Cases Section */
+#use-cases ul {
+  margin-left: 20px;
+}
+
+#use-cases li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Back Button */
+.back-button {
+  background: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 10px;
+}
+
+.back-button:hover {
+  background: #5a6268;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #007bff;
+  color: #fff;
+  margin-top: 2rem;
+}

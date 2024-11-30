@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Water Gun Game</title>
+    <link rel="stylesheet" href="snake-water-gun.css">
+</head>
+<body>
+    <header>
+        <h1>Snake-Water-Gun Game</h1>
+        <p>A fun and interactive game to play with Snake, Water, and Gun!</p>
+    </header>
+    <main>
+        <section id="objective">
+            <h2>Objective</h2>
+            <p>The goal of this game is to choose between Snake, Water, or Gun and play against the computer. Snake beats Water, Water beats Gun, and Gun beats Snake.</p>
+        </section>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>In this game, players will select one of three options (Snake, Water, Gun). The computer randomly selects an option, and the winner is determined based on the game's rules.</p>
+        </section>
+        <section id="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Select either Snake, Water, or Gun to play your move.</li>
+                <li>The computer will randomly select one of the three options.</li>
+                <li>The result will be displayed based on who wins.</li>
+            </ul>
+        </section>
+        <section id="game-area">
+            <h2>Play the Game</h2>
+            <div class="game-buttons">
+                <button onclick="playGame('snake')">Snake</button>
+                <button onclick="playGame('water')">Water</button>
+                <button onclick="playGame('gun')">Gun</button>
+            </div>
+            <div id="result">
+                <h3>Result:</h3>
+                <p id="game-result">Choose your move to begin!</p>
+            </div>
+        </section>
+        <section id="game-rules">
+            <h2>Game Rules</h2>
+            <ul>
+                <li><strong>Snake</strong> beats <strong>Water</strong></li>
+                <li><strong>Water</strong> beats <strong>Gun</strong></li>
+                <li><strong>Gun</strong> beats <strong>Snake</strong></li>
+            </ul>
+        </section>
+    </main>
+    <button class="back-button" onclick="goBack()">← Back</button>
+        <footer>
+            <p>Developed by Pihu 🚀 | Fun Game Powered by JavaScript 🌟</p>
+        </footer>
+    <script src="snake-water-gun.js"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background: #3f51b5;
+  background: #4caf50;
   color: #fff;
   padding: 1.5rem 0;
   text-align: center;
@@ -41,8 +41,8 @@ section {
 }
 
 h2 {
-  color: #3f51b5;
-  border-bottom: 2px solid #3f51b5;
+  color: #4caf50;
+  border-bottom: 2px solid #4caf50;
   padding-bottom: 0.5rem;
 }
 
@@ -56,49 +56,48 @@ ul li, ol li {
   margin-bottom: 0.5rem;
 }
 
-/* Calculator Layout */
-#calculator {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  margin-top: 2rem;
+/* Buttons */
+.game-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
 }
 
 button {
-  padding: 1.5rem;
+  padding: 1rem 2rem;
   font-size: 1.5rem;
-  background: #f4f4f4;
-  border: 2px solid #ddd;
-  border-radius: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #e0e0e0;
+  background-color: #45a049;
 }
 
 button:active {
   transform: scale(0.95);
 }
 
+/* Result Area */
 #result {
-  grid-column: span 4;
-  padding: 1rem;
-  font-size: 2rem;
-  text-align: right;
-  background-color: #f9f9f9;
-  border: 2px solid #ddd;
-  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-.clear {
-  background-color: #f44336;
-  color: white;
-}
-
-.clear:hover {
-  background-color: #e53935;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #333;
+  color: #fff;
+  margin-top: 2rem;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .back-button {
@@ -116,15 +115,4 @@ button:active {
 
 .back-button:hover {
   background: #ececec;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  background: #333;
-  color: #fff;
-  margin-top: 2rem;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
 }

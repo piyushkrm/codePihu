@@ -101,6 +101,17 @@ button:active {
   background-color: #e53935;
 }
 
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #333;
+  color: #fff;
+  margin-top: 2rem;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
 .back-button {
   display: inline-block;
   margin: 1rem auto;
@@ -116,15 +127,4 @@ button:active {
 
 .back-button:hover {
   background: #ececec;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  background: #333;
-  color: #fff;
-  margin-top: 2rem;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
 }

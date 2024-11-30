@@ -5,5 +5,5 @@ function goBack() {
 
 // Log a message
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Welcome to the Vehicle Speed Detection System Page!");
+    console.log("Welcome to the Tic-Tac-Toe Game Loaded!!");
 });

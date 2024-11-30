@@ -1,6 +1,6 @@
 // Go back to the previous page
 function goBack() {
-    window.history.back("file:///F:/Projects/Project1/helmet-detection.html");
+    window.history.back("file:///F:/Projects/main/index.html");
 }
 
 // Log a message

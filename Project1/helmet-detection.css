@@ -1,44 +1,52 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  .project-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .read-more {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .read-more:hover {
-    background-color: #0056b3;
-  }
-  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+h1,
+h2 {
+  color: #333;
+}
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.section {
+  margin-bottom: 30px;
+}
+.btn-back {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn-back:hover {
+  background: #0056b3;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  color: #666;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}

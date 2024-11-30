@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="image-slider.css">
+</head>
+<body>
+    <header>
+        <h1>Image Slider Project</h1>
+        <p>A simple and dynamic image slider to showcase images in a slideshow format.</p>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>The Image Slider project involves creating an interactive interface that displays multiple images one after another, with automatic transitions or manual controls. It allows users to view a gallery of images in a slideshow format, which can be useful for displaying portfolios, galleries, and product images.</p>
+        </section>
+
+        <section id="objective">
+            <h2>Objective</h2>
+            <p>The goal of this project is to create a fully functional and responsive image slider that automatically transitions between images, while also allowing users to navigate through images using next/previous buttons or indicators.</p>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Automatic Slideshow:</strong> Images transition automatically after a set interval.</li>
+                <li><strong>Navigation Controls:</strong> Users can manually navigate through the images using next and previous buttons.</li>
+                <li><strong>Indicators:</strong> Small dots at the bottom allow users to jump to a specific image in the slider.</li>
+                <li><strong>Responsive Design:</strong> The slider adjusts to fit different screen sizes and devices.</li>
+                <li><strong>Fade and Slide Effects:</strong> Smooth transitions between images with fade-in/fade-out or slide-up/slide-down effects.</li>
+            </ul>
+        </section>
+
+        <section id="technology-stack">
+            <h2>Technology Stack</h2>
+            <ul>
+                <li><strong>HTML5:</strong> For structuring the content of the slider and other sections of the page.</li>
+                <li><strong>CSS3:</strong> For styling the slider and page layout with transitions and effects.</li>
+                <li><strong>JavaScript:</strong> For implementing the functionality of automatic and manual transitions.</li>
+            </ul>
+        </section>
+
+        <section id="key-learning-outcomes">
+            <h2>Key Learning Outcomes</h2>
+            <ul>
+                <li>Learn how to create interactive UI components like an image slider.</li>
+                <li>Understand how to implement automatic transitions with JavaScript.</li>
+                <li>Work with CSS transitions and animations to enhance user experience.</li>
+                <li>Develop responsive designs using media queries to ensure the slider works on all screen sizes.</li>
+            </ul>
+        </section>
+
+        <section id="use-cases">
+            <h2>Use Cases</h2>
+            <ul>
+                <li><strong>Photography Portfolios:</strong> Showcase a photographer's work in a dynamic and engaging manner.</li>
+                <li><strong>Product Showcases:</strong> Display products in an interactive format on e-commerce websites.</li>
+                <li><strong>Image Galleries:</strong> Present multiple images in an organized and attractive way for users to browse.</li>
+            </ul>
+        </section>
+
+        <section id="image-slider">
+            <h2>Image Slider</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image2.jpg" alt="Image 2">
+                    <img src="image3.jpg" alt="Image 3">
+                    <img src="image4.jpg" alt="Image 4">
+                </div>
+                <div class="controls">
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button class="back-button" onclick="goBack()">← Back</button>
+    <footer>
+        <p>Developed by Pihu 🚀 | Powered by Web Technologies 🌟</p>
+    </footer>
+    <script src="image-slider.js"></script>
+</body>
+</html>

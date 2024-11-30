@@ -1,9 +1,6 @@
-// Go back to the previous page
+// Function to navigate back
 function goBack() {
     window.history.back("file:///F:/Projects/main/index.html");
 }
 
-// Log a message
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("Welcome to the Vehicle Speed Detection System Page!");
-});
+console.log("Helmet Detection System Page Loaded!");

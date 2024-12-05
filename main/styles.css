@@ -44,23 +44,45 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Align child elements at edges */
+    align-items: center;
+  }
+  
+  header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0px 0px 0px 210px;
+    font-size: -webkit-xxx-large;
+  }
+  
+  header nav {
+    flex: 0; /* Prevent navigation from stretching */
   }
   
   header nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 15px; /* Add space between menu items */
   }
   
   header nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0;
   }
   
   header nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
   }
+  
+  header nav ul li a:hover {
+    color: #007BFF;
+  }
+  
   
 
   @keyframes fadeIn {

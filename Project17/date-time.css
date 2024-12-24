@@ -129,6 +129,46 @@ h2 {
   background: #3700b3;
 }
 
+/* Project Code Section Styles */
+#project-code {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#project-code h2 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+.code-container {
+  margin-top: 1rem;
+  background: #282c34;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: Consolas, "Courier New", monospace;
+  white-space: pre-wrap; /* Ensures long code lines wrap properly */
+  overflow-wrap: break-word; /* Breaks long words in code */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+  margin: 0;
+}
+
+code {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5;
+  white-space: pre-wrap; /* Ensures code wraps inside container */
+  word-wrap: break-word;
+}
+
+
 /* Footer */
 footer {
   text-align: center;

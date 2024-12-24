@@ -68,6 +68,51 @@
             <img src="https://private-user-images.githubusercontent.com/143158860/348474688-239a8639-4acf-44a6-a9cf-832731eae5a1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUwNDI2MTIsIm5iZiI6MTczNTA0MjMxMiwicGF0aCI6Ii8xNDMxNTg4NjAvMzQ4NDc0Njg4LTIzOWE4NjM5LTRhY2YtNDRhNi1hOWNmLTgzMjczMWVhZTVhMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIyNFQxMjExNTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MjJmMjViMmM4ZGY2NTdkMWFkMWZlYmMzNGZmMjdlMTk4OTAyYTNmY2EwYmQwZDcyNGRmMTk2YzZmNGNmOWZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.-_Vt0jHhCXWUyHU4hG4C1D2-EE4EMxHkcJghMXdEQzs" alt="Date and Time Snapshot" class="snapshot-image">
         </section>
 
+        <section id="project-code">
+            <h2>Project Code</h2>
+            <p>Explore the code for the Helmet Detection System below:</p>
+            <div class="code-container">
+                <pre><code class="language-python">
+        # Example Python code for Helmet Detection System
+        
+        import cv2
+        import tensorflow as tf
+        
+        # Load pre-trained model
+        model = tf.keras.models.load_model('helmet_detection_model.h5')
+        
+        # Start video capture
+        cap = cv2.VideoCapture(0)
+        
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                break
+        
+            # Preprocess the frame
+            processed_frame = preprocess_frame(frame)
+        
+            # Predict helmet status
+            prediction = model.predict(processed_frame)
+        
+            # Display the result
+            if prediction > 0.5:
+                cv2.putText(frame, "Helmet: Yes", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            else:
+                cv2.putText(frame, "Helmet: No", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+        
+            cv2.imshow("Helmet Detection", frame)
+        
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+        
+        cap.release()
+        cv2.destroyAllWindows()
+                </code></pre>
+            </div>
+        </section>
+        
+
         <section id="repository">
             <h2>Repository</h2>
             <p>Explore the source code of the Helmet Detection System on GitHub:</p>

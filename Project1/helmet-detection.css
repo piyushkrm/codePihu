@@ -47,7 +47,8 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 1rem 0;
   padding-left: 1.5rem;
 }
@@ -78,4 +79,21 @@ footer {
 
 .back-button:hover {
   background: #ececec;
+}
+
+/* Additional Styles for Snapshots Section */
+#snapshots {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.snapshot-image {
+  max-width: 42%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }

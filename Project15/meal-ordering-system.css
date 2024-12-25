@@ -99,6 +99,62 @@ button[type="submit"]:hover, .back-button:hover {
   background-color: #e55347;
 }
 
+
+/* Additional Styles for Snapshots Section */
+#snapshots {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.snapshot-image {
+  max-width: 42%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Repository Section Styles */
+#repository {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#repository h2 {
+  color: #ff6347;
+  border-bottom: 2px solid #ff6347;
+  padding-bottom: 0.5rem;
+}
+
+.repo-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #ff6347;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.repo-link:hover {
+  background: #3700b3;
+}
+
+/* Back Button */
+.back-button {
+  display: inline-block;
+  margin: 1rem auto;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -106,10 +162,4 @@ footer {
   background: #ff6347;
   color: #fff;
   margin-top: 2rem;
-}
-
-/* Back Button */
-.back-button {
-  display: inline-block;
-  margin: 1rem auto;
 }

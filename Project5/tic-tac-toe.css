@@ -46,12 +46,14 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 1rem 0;
   padding-left: 1.5rem;
 }
 
-ul li, ol li {
+ul li,
+ol li {
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -94,17 +96,6 @@ button:hover {
   background: #283593;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  background: #333;
-  color: #fff;
-  margin-top: 2rem;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
 .back-button {
   display: inline-block;
   margin: 1rem auto;
@@ -120,4 +111,63 @@ footer {
 
 .back-button:hover {
   background: #ececec;
+}
+
+/* Additional Styles for Snapshots Section */
+#snapshots {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.snapshot-image {
+  max-width: 42%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Repository Section Styles */
+#repository {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#repository h2 {
+  color: #3f51b5;
+  border-bottom: 2px solid #3f51b5;
+  padding-bottom: 0.5rem;
+}
+
+.repo-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #3f51b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.repo-link:hover {
+  background: #3700b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #333;
+  color: #fff;
+  margin-top: 2rem;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
 }

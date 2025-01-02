@@ -1,191 +1,192 @@
-/* General Styles */
 
-  /* Example color scheme */
+/* Example color scheme */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --text-color: #333;
-    --background-color: #f4f4f4;
-  }
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #333;
+  --background-color: #f4f4f4;
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    cursor: url('cursor.png'), auto;
-  }
-  
-  h1, h2, h3 {
-    color: var(--primary-color);
-  }
-  
-  a {
-    color: var(--primary-color);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: var(--secondary-color);
-  }
-  
-  /* Header Styles */
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between; /* Align child elements at edges */
-    align-items: center;
-  }
-  
-  header h1 {
-    flex: 1;
-    text-align: center;
-    margin: 0px 0px 0px 210px;
-    font-size: -webkit-xxx-large;
-  }
-  
-  header nav {
-    flex: 0; /* Prevent navigation from stretching */
-  }
-  
-  header nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 15px; /* Add space between menu items */
-  }
-  
-  header nav ul li {
-    margin: 0;
-  }
-  
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  header nav ul li a:hover {
-    color: #007BFF;
-  }
-  
-  
+html {
+  scroll-behavior: smooth;
+}
 
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  /* Projects Section */
-  #projects {
-    margin: 20px auto;
-    max-width: 1050px;
-    padding: 0 15px;
-  }
-  
-  /* Project Card Styles */
-  .project-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
-    transition: transform 0.3s ease-in-out;
-    animation: fadeIn 1s ease-out;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .project-card:hover {
-    transform: scale(1.1); /* Zoom effect */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Heading Style */
-  .project-card h3 {
-    text-align: left;
-    margin: 0 0 10px 0;
-    font-size: 1.5rem;
-    color: #333;
-    width: 100%;
-  }
-  
-  /* Card Content Styles */
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-  }
-  
-  .card-content p {
-        text-align: justify;
-        line-height: 1.6;
-        margin: 0 0 0 14px;
-        word-wrap: break-word;
-        width: 86%;
-    }
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  cursor: url("cursor.png"), auto;
+}
 
-  .card-content ul li {
-    text-align: left;
-    line-height: 1.6;
-    margin: 0;
-    word-wrap: break-word;
-    width: 100%;
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Align child elements at edges */
+  align-items: center;
+}
+
+header h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0px 0px 0px 210px;
+  font-size: -webkit-xxx-large;
+}
+
+header nav {
+  flex: 0; /* Prevent navigation from stretching */
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px; /* Add space between menu items */
+}
+
+header nav ul li {
+  margin: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #007bff;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Projects Section */
+#projects {
+  margin: 20px auto;
+  max-width: 1050px;
+  padding: 0 15px;
+}
+
+/* Project Card Styles */
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  transition: transform 0.3s ease-in-out;
+  animation: fadeIn 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-card:hover {
+  transform: scale(1.1); /* Zoom effect */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Style */
+.project-card h3 {
+  text-align: left;
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  color: #333;
+  width: 100%;
+}
+
 /* Card Content Styles */
-    .card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-  }
-  
-  /* Align Read More button to the right */
-  .card-content .read-more {
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-left: auto; /* This pushes the button to the right */
-    max-width: 120px;
-    text-align: right;
-    transition: background-color 0.3s ease;
-    white-space: nowrap;
-  }
-  
-  .card-content .read-more:hover {
-    background-color: #555;
-  }
-  
-  
-  /* Footer Styles */
-  footer {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-  }
-  
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.card-content p {
+  text-align: justify;
+  line-height: 1.6;
+  margin: 0 0 0 14px;
+  word-wrap: break-word;
+  width: 86%;
+}
+
+.card-content ul li {
+  text-align: left;
+  line-height: 1.6;
+  margin: 0;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+/* Card Content Styles */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* Align Read More button to the right */
+.card-content .read-more {
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: auto; /* This pushes the button to the right */
+  max-width: 120px;
+  text-align: right;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.card-content .read-more:hover {
+  background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
